@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace AllConsole
 {
-    internal class Teacher : Person
+    internal class Teacher : IPerson
     {
         // variables
         public double Salary { get; set; } = 1000;
+        public string FullName { get; set; }
 
         public Teacher(string fullName, int salary)
         {

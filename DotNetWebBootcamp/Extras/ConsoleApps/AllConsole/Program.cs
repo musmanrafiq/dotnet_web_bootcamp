@@ -6,10 +6,11 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        Student ali = new Student();
+        //Person person = new Person();
+        IPerson ali = new Student();
         ali.Introduction();
 
-        Teacher teacher = new Teacher("Raza Ahmed", 50000);
+        IPerson teacher = new Teacher("Raza Ahmed", 50000);
         teacher.Introduction(); 
     }
 }

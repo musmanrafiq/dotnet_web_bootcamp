@@ -1,10 +1,10 @@
 ﻿namespace AllConsole
 {
-    internal class Student : Person
+    internal class Student : IPerson
     {
         // variables
         int userAge = 29;
-        string fullName = "Ali";
+        public string FullName { get; set; }
 
         
         public void Introduction()
