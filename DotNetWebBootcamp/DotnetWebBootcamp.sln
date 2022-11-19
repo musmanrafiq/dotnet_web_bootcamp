@@ -7,6 +7,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1Exercise", "Day1Exercis
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day1", "Day1", "{02AD2BF2-510C-4DFA-9FD2-B25D48F8CC0C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extras", "Extras", "{CD3A5E89-BBBE-48F1-A937-D72C5C6155FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ConsoleApps", "ConsoleApps", "{9889BEDB-B60A-4823-AC8B-7AE4C8CEC54D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AllConsole", "Extras\ConsoleApps\AllConsole\AllConsole.csproj", "{1610BFC0-DB57-4F28-B951-DCE024A213D5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +23,18 @@ Global
 		{AC50C795-82A3-451A-9FAB-ABBB1143158A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC50C795-82A3-451A-9FAB-ABBB1143158A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC50C795-82A3-451A-9FAB-ABBB1143158A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1610BFC0-DB57-4F28-B951-DCE024A213D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1610BFC0-DB57-4F28-B951-DCE024A213D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1610BFC0-DB57-4F28-B951-DCE024A213D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1610BFC0-DB57-4F28-B951-DCE024A213D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{AC50C795-82A3-451A-9FAB-ABBB1143158A} = {02AD2BF2-510C-4DFA-9FD2-B25D48F8CC0C}
+		{9889BEDB-B60A-4823-AC8B-7AE4C8CEC54D} = {CD3A5E89-BBBE-48F1-A937-D72C5C6155FB}
+		{1610BFC0-DB57-4F28-B951-DCE024A213D5} = {9889BEDB-B60A-4823-AC8B-7AE4C8CEC54D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CBBCF9D8-65B3-48D3-8466-F27D121F0D60}

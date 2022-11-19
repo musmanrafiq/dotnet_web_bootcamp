@@ -1,26 +1,32 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
-public class Program
+using System;
+
+namespace Day1Exercise
 {
 
-    // variables
-    int userAge = 29;
-    static string fullName = "This is my full name";
-    double salary = 1000.0;
-
-
-
-    public static void Main(string[] args)
+    public class Program
     {
-        Console.WriteLine($"Hello, {fullName}, \n your age is {29}");
 
-        /*foreach(char singleChar in fullName)
+        // variables
+        static int userAge = 29;
+        static string fullName = "This is my full name";
+        static double salary = 1000.0;
+
+
+
+        public static void Main(string[] args)
         {
-            Console.Write(singleChar + "\n");
-        }*/
+            Console.WriteLine($"Hello, {fullName}, \n your age is {userAge}");
 
-        Console.WriteLine(fullName.Substring(fullName.IndexOf('m')));
+            /*foreach(char singleChar in fullName)
+            {
+                Console.Write(singleChar + "\n");
+            }*/
+
+            Console.WriteLine(fullName.Substring(fullName.IndexOf('m')));
+        }
     }
-}
 
+}
