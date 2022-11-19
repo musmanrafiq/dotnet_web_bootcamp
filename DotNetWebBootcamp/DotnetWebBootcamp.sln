@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1Exercise", "Day1Exercise\Day1Exercise.csproj", "{AC50C795-82A3-451A-9FAB-ABBB1143158A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1Exercise", "Day1Exercise\Day1Exercise.csproj", "{AC50C795-82A3-451A-9FAB-ABBB1143158A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day1", "Day1", "{02AD2BF2-510C-4DFA-9FD2-B25D48F8CC0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +20,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC50C795-82A3-451A-9FAB-ABBB1143158A} = {02AD2BF2-510C-4DFA-9FD2-B25D48F8CC0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CBBCF9D8-65B3-48D3-8466-F27D121F0D60}
