@@ -1,9 +1,9 @@
 # dotnet_web_bootcamp
 
-## Yourtube playlist for C# tutorials
+## Youtube playlist for C# tutorials
 https://www.youtube.com/watch?v=XNI1ToHClB0&list=PLlfN4N9fXldvi09_0VeVLKGa0YJLWFgKX
 
-## Yourube playlist for Git tutorials
+## Youtube playlist for Git tutorials
 https://www.youtube.com/watch?v=jAPzjyqtwpk&list=PLlfN4N9fXldv8nQ__Kcc4p6xwdpc9Nxsv
 
 ## Questions:
