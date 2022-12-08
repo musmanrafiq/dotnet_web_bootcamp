@@ -37,5 +37,12 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    <script type="text/javascript">
+                $('input[type=submit]').on('click', function (event) { 
+                    //event.preventDefault();
+                    debugger; 
+                })
+    </script>
+}
 }
