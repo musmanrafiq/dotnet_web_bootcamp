@@ -6,10 +6,14 @@ https://www.youtube.com/watch?v=XNI1ToHClB0&list=PLlfN4N9fXldvi09_0VeVLKGa0YJLWF
 ## Youtube playlist for Git tutorials
 https://www.youtube.com/watch?v=jAPzjyqtwpk&list=PLlfN4N9fXldv8nQ__Kcc4p6xwdpc9Nxsv
 
+## Youtube playlist for Asp.net MVC tutorials visual studio 2022
+https://www.youtube.com/playlist?list=PLlfN4N9fXldsZ6RjH6-Di_dVTDUyVcVb-
+
+
 ## Questions:
 
 ### Q1: overloading and overriding?
-Anser is here in this thread, https://github.com/musmanrafiq/dotnet_web_bootcamp/issues/1#issuecomment-1342842621
+Answer is here in this thread, https://github.com/musmanrafiq/dotnet_web_bootcamp/issues/1#issuecomment-1342842621
 
 ### Q2: kindly Explain pillars of OOP Abstraction?
 https://www.youtube.com/watch?v=cgGM2e506-E
