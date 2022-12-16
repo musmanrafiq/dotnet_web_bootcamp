@@ -1,0 +1,56 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@section Scripts {
+
+    <script type="text/javascript" >
+
+        throw("Error")
+
+        testingTryCatch();
+
+
+        var cars = ["BMW", "Toyota", "Honda"];
+
+        //alert(cars[0]);
+
+        //cars.forEach(function(singleCar) {
+        //console.log(singleCar);
+        //});
+
+        // function to demonstrate sum
+        function sum(firstParam, secondParam){
+
+            var tempResult = firstParam + secondParam;
+            return tempResult;
+        }
+
+        // alert('Hi I am a developer now')
+        //var result = sum(2,3);
+        //alert(tempResult);
+
+        function testingTryCatch(){
+
+            try {
+            var numArray = [];
+            alert(numArray[2]);
+            }
+            catch(err){
+                console.log(err)
+            }
+            finally {
+
+
+
+                alert('I am finally')
+            }
+
+        }
+       
+
+    </script>
+
+}
