@@ -1,0 +1,45 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<style>
+        .redDiv {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+			display:none;
+		}
+    </style>
+
+<h1>Demo: jQuery fadeIn() method</h1>
+
+<button onclick="fadeInExample()">Click</button>
+
+	<div id="myDiv" class="redDiv">
+	</div>
+
+	<div id="msgDiv"></div>
+
+	@section Scripts {
+
+    <script type="text/javascript" >
+		
+		function fadeInExample(){
+
+			$('#myDiv').fadeIn(10000, "linear", function () {
+				$('#msgDiv').append('fadeIn() completed.')
+			});
+		}
+
+		$(document).ready(function () {
+
+			/*$('#myDiv').fadeIn(5000, function () {
+				$('#msgDiv').append('fadeIn() completed.')
+			});*/
+
+		});
+	</script>
+
+	}
