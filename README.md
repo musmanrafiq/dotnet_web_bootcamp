@@ -1,5 +1,8 @@
 # dotnet_web_bootcamp
 
+## Shop Management System using Asp.net MVC
+#### 1 - Create Shop Management System in DotNet 7 using Asp.net MVC - 01  https://www.youtube.com/watch?v=u1Vqy3JJ9DI
+
 ## Youtube playlist for C# tutorials
 https://www.youtube.com/watch?v=XNI1ToHClB0&list=PLlfN4N9fXldvi09_0VeVLKGa0YJLWFgKX
 
