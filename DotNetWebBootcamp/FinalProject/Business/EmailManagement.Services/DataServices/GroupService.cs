@@ -28,7 +28,5 @@ namespace EmailManagement.Services.DataServices
 
             return groups.ToList();
         }
-        
-
     }
 }
