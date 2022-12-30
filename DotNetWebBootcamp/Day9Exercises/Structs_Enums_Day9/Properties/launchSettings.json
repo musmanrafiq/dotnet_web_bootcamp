@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "Structs_Enums_Day9": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:57343;http://localhost:57344"
+    }
+  }
+}

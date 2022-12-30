@@ -1,7 +1,13 @@
+using EmailManagement.Services.DataServices;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// all DI stuff here
+builder.Services.AddSingleton<GroupService>();
+
 
 var app = builder.Build();
 

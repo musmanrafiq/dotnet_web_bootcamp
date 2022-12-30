@@ -13,20 +13,51 @@ namespace EmailManagement.Services.DataServices
 
         public List<GroupModel> GetAll()
         {
-            groups.Add(new GroupModel
-            {
-                Id = 1,
-                Title = "First Group",
-                Description = "First Group Description"
-            });
-            groups.Add(new GroupModel
-            {
-                Id = 2,
-                Title = "Second Group",
-                Description = "Second Group Description"
-            });
-
             return groups.ToList();
+        }
+
+        public void Add(GroupModel model)
+        {
+            Random random = new Random();
+            int tempNewId = 0;
+
+            bool hasGenerated = false;
+
+            while(true)
+            {
+                tempNewId = random.Next(1, 99999999);
+                GroupModel searchedModel = groups.FirstOrDefault(x => x.Id == tempNewId);
+                if(searchedModel == null)
+                {
+                    break;
+                }
+            }
+
+            model.Id = tempNewId;
+            groups.Add(model);
+        }
+
+        public GroupModel GetById(int id)
+        {
+           return groups.FirstOrDefault(x => x.Id == id);
+        }
+        public void Remove(int id)
+        {
+            GroupModel model = groups.FirstOrDefault(x => x.Id == id);
+            if(model != null)
+            {
+                groups.Remove(model);
+            }
+        }
+
+        public void Update(GroupModel model)
+        {
+            GroupModel modelToUpdate = groups.FirstOrDefault(x => x.Id == model.Id);
+            if (modelToUpdate != null)
+            {
+                modelToUpdate.Title = model.Title;
+                modelToUpdate.Description = model.Description;
+            }
         }
     }
 }

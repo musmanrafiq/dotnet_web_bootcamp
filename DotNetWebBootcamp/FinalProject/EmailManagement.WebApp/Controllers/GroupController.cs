@@ -7,13 +7,19 @@ namespace EmailManagement.WebApp.Controllers
 {
     public class GroupController : Controller
     {
+        private readonly GroupService _groupService;
+
+        public GroupController(GroupService groupService)
+        {
+            _groupService = groupService;
+        }
 
         // GET: GroupController
         public ActionResult Index()
         {
-            GroupService groupService = new GroupService();
+            
             return 
-                View(groupService.GetAll());
+                View(_groupService.GetAll());
         }
 
         // GET: GroupController/Details/5
@@ -31,10 +37,11 @@ namespace EmailManagement.WebApp.Controllers
         // POST: GroupController/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(GroupModel model)
         {
             try
             {
+                _groupService.Add(model);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -46,16 +53,18 @@ namespace EmailManagement.WebApp.Controllers
         // GET: GroupController/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            GroupModel model = _groupService.GetById(id);
+            return View(model);
         }
 
         // POST: GroupController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(GroupModel model)
         {
             try
             {
+                _groupService.Update(model);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -67,22 +76,9 @@ namespace EmailManagement.WebApp.Controllers
         // GET: GroupController/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            _groupService.Remove(id);
+            return RedirectToAction(nameof(Index));
         }
 
-        // POST: GroupController/Delete/5
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
-        {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
