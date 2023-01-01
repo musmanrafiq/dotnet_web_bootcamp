@@ -1,5 +1,6 @@
 # dotnet_web_bootcamp
 
+## For discussion join WhatsApp group :https://chat.whatsapp.com/I47L156KbEs89INgWfRwAg 
 ## Shop Management System using Asp.net MVC
 #### 1 - Create Shop Management System in DotNet 7 using Asp.net MVC - 01  https://www.youtube.com/watch?v=u1Vqy3JJ9DI
 
