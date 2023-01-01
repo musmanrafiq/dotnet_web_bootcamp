@@ -59,5 +59,12 @@ namespace EmailManagement.Services.DataServices
                 modelToUpdate.Description = model.Description;
             }
         }
+
+        public List<GroupModel> GetSearch(string query)
+        {
+            query = query.ToLower().Trim();
+            return groups.Where(x=> x.Title.ToLower().Contains(query) 
+            || x.Description.ToLower().Contains(query)).ToList();
+        }
     }
 }

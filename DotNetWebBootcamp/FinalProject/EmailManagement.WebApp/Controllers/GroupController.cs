@@ -15,11 +15,18 @@ namespace EmailManagement.WebApp.Controllers
         }
 
         // GET: GroupController
-        public ActionResult Index()
+        public ActionResult Index(string? search)
         {
-            
+            List<GroupModel> groups = null;
+            if (search != null)
+            {
+               groups =  _groupService.GetSearch(search);
+            } else { 
+                groups = _groupService.GetAll(); 
+            }
+
             return 
-                View(_groupService.GetAll());
+                View(groups);
         }
 
         // GET: GroupController/Details/5
