@@ -41,20 +41,24 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "Extras\Bench
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day9", "Day9", "{B5EBAC7C-90A4-4FE7-A4C8-D87F2BE83028}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Structs_Enums_Day9", "Day9Exercises\Structs_Enums_Day9\Structs_Enums_Day9.csproj", "{9752DCB4-AA56-42BE-A64A-DF93A379D1D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Structs_Enums_Day9", "Day9Exercises\Structs_Enums_Day9\Structs_Enums_Day9.csproj", "{9752DCB4-AA56-42BE-A64A-DF93A379D1D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FinalProject", "FinalProject", "{4CF5E5F5-CCCF-4986-A6BF-62BE54BE7613}"
 	ProjectSection(SolutionItems) = preProject
-		.readme = .readme
+		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManagement.WebApp", "FinalProject\EmailManagement.WebApp\EmailManagement.WebApp.csproj", "{89437FDE-A6A7-4928-BCD5-B111336A54A3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManagement.WebApp", "FinalProject\EmailManagement.WebApp\EmailManagement.WebApp.csproj", "{89437FDE-A6A7-4928-BCD5-B111336A54A3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{A048152D-DF98-4A7C-BEB0-13557254ABFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManagement.Models", "FinalProject\Business\EmailManagement.Models\EmailManagement.Models.csproj", "{6572CC07-83B1-4E4E-8527-924CE01D9CAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManagement.Models", "FinalProject\Business\EmailManagement.Models\EmailManagement.Models.csproj", "{6572CC07-83B1-4E4E-8527-924CE01D9CAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailManagement.Services", "FinalProject\Business\EmailManagement.Services\EmailManagement.Services.csproj", "{960DAE0E-915C-44DB-80F8-52C79240362E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailManagement.Services", "FinalProject\Business\EmailManagement.Services\EmailManagement.Services.csproj", "{960DAE0E-915C-44DB-80F8-52C79240362E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{2BDB9B88-617C-44C9-9D49-3BB208FF6B41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{9B003425-D331-4B42-A771-FC6ED27D3960}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -132,10 +136,11 @@ Global
 		{D7B8B04D-F966-45B1-BEC0-970F90B42758} = {CD3A5E89-BBBE-48F1-A937-D72C5C6155FB}
 		{96EA3C91-E5E0-4482-A899-ED3882B6EAD3} = {D7B8B04D-F966-45B1-BEC0-970F90B42758}
 		{9752DCB4-AA56-42BE-A64A-DF93A379D1D3} = {B5EBAC7C-90A4-4FE7-A4C8-D87F2BE83028}
-		{89437FDE-A6A7-4928-BCD5-B111336A54A3} = {4CF5E5F5-CCCF-4986-A6BF-62BE54BE7613}
+		{89437FDE-A6A7-4928-BCD5-B111336A54A3} = {2BDB9B88-617C-44C9-9D49-3BB208FF6B41}
 		{A048152D-DF98-4A7C-BEB0-13557254ABFB} = {4CF5E5F5-CCCF-4986-A6BF-62BE54BE7613}
 		{6572CC07-83B1-4E4E-8527-924CE01D9CAF} = {A048152D-DF98-4A7C-BEB0-13557254ABFB}
 		{960DAE0E-915C-44DB-80F8-52C79240362E} = {A048152D-DF98-4A7C-BEB0-13557254ABFB}
+		{2BDB9B88-617C-44C9-9D49-3BB208FF6B41} = {4CF5E5F5-CCCF-4986-A6BF-62BE54BE7613}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CBBCF9D8-65B3-48D3-8466-F27D121F0D60}
