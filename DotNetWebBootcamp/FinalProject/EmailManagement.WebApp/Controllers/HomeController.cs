@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 namespace EmailManagement.WebApp.Controllers
 {
+    //[Route("test/[Controller]")]
     public class HomeController : Controller
     {
 
@@ -16,7 +17,9 @@ namespace EmailManagement.WebApp.Controllers
             ViewBag.PageName = "Usman";
             ViewData["CurrentUser"] = "Usman Rafiq";
             TempData["Testing"] = DateTime.Now;
-            return View();
+
+            ViewData["Name"] = "Random Name";
+            return View("Privacy");
         }
 
         public IActionResult Privacy()
@@ -32,6 +35,11 @@ namespace EmailManagement.WebApp.Controllers
         {
             var inp = TempData["Testing"];
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        public IActionResult Wishlist()
+        {
+            return View("Index");
         }
     }
 }

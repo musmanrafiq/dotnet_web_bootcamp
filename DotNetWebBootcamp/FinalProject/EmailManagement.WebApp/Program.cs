@@ -1,4 +1,6 @@
 using EmailManagement.Services.DataServices;
+using Microsoft.AspNetCore.Routing;
+using System.Security.Policy;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,5 +31,11 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+
+//wishlist
+app.MapControllerRoute(name: "Wishlist",
+    pattern: $"es/wishlist/{{customerGuid}}",
+    defaults: new { controller = "Home", action = "Wishlist" });
 
 app.Run();

@@ -1,8 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    //Layout = null;
 }
  
+@Html.Partial("_banner")
+
 <div class="text-center">
+    @ViewData["Name"]
+
     <h1 class="display-4">Welcome  @ViewBag.PageName @ViewData["CurrentUser"] ]</h1>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
