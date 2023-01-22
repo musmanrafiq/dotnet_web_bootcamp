@@ -19,6 +19,49 @@ namespace Day19EntityFramework.Controllers
 
         public IActionResult Index()
         {
+            var employee = new Employee { 
+                Name = "Employee1",
+                Address = "House # 11",
+                PayDetail = new PayDetail
+                {
+                    Pay = 10000
+                }
+            };
+            _context.Employees.Add(employee);
+            _context.SaveChanges();
+
+            var stuent1 = new Student
+            {
+                Name = "Student1",
+                EnrolmentDate = DateTime.Now,
+            };
+
+            var stuent2 = new Student
+            {
+                Name = "Student1",
+                EnrolmentDate = DateTime.Now,
+            };
+
+            var course1 = new Course
+            {
+                Title = "Course1",
+            };
+
+            var Course2 = new Course
+            {
+                Title = "Course2"
+            };
+
+
+            stuent1.StudentCourses.Add(new StudentCourse { Course = course1 });
+            stuent1.StudentCourses.Add(new StudentCourse { Course = Course2 });
+            stuent2.StudentCourses.Add(new StudentCourse { Course = Course2 });
+
+            _context.Students.Add(stuent2);
+            _context.Students.Add(stuent1);
+            _context.SaveChanges();
+
+
             return View();
         }
 

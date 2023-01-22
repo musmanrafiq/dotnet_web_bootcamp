@@ -16,8 +16,8 @@ namespace Day19EntityFramework
             builder.Services.AddDbContext<ApplicationDbContext>(
                 (options =>
                 {
-                    options.UseSqlServer("Data Source=localhost; Database=employDb;TrustServerCertificate=true;Integrated Security=SSPI;");
-
+                    options.
+                    UseSqlServer(builder.Configuration.GetConnectionString("FirstConString"));
                 }));
             var app = builder.Build();
 
