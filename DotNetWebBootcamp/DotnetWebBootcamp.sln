@@ -68,7 +68,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day", "Day", "{BC653DF3-4E6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day19", "Day19", "{B472D00C-F1C8-4D4E-9008-82445D7113E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day19EntityFramework", "Day19Excercises\Day19EntityFramework\Day19EntityFramework.csproj", "{F4D9D2A0-AF1B-4224-A423-6DF0C9595FE0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day19EntityFramework", "Day19Excercises\Day19EntityFramework\Day19EntityFramework.csproj", "{F4D9D2A0-AF1B-4224-A423-6DF0C9595FE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

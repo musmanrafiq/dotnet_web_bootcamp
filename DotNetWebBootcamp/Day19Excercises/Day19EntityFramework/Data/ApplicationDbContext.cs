@@ -61,34 +61,25 @@ namespace Day19EntityFramework.Data
     {
         public Student()
         {
-            StudentCourses = new List<StudentCourse>();
+            //StudentCourses = new List<StudentCourse>();
         }
         public int Id { get; set; }
         public string Name { get; set; }
 
         public DateTime EnrolmentDate { get; set; }
-        public ICollection<StudentCourse> StudentCourses { get; set; } 
+        //public ICollection<StudentCourse> StudentCourses { get; set; } 
     }
 
     public class Course
     {
         public Course()
         {
-            StudentCourses = new List<StudentCourse>();
+            //StudentCourses = new List<StudentCourse>();
         }
         public int Id { get; set; }
         public string Title { get; set; }
         public int CreditHours { get; set; }
 
-        public ICollection<StudentCourse> StudentCourses { get; set; }
-    }
-
-    [PrimaryKey(nameof(CourseId), nameof(StudentId))]
-    public class StudentCourse
-    {
-        public int CourseId { get; set; }
-        public Course Course { get; set; }
-        public int StudentId { get; set; }        
-        public Student Student { get; set; }
+        //public ICollection<StudentCourse> StudentCourses { get; set; }
     }
 }
