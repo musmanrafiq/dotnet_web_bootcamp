@@ -141,21 +141,13 @@ namespace Day19EntityFramework.Migrations
 
             modelBuilder.Entity("Day19EntityFramework.Data.StudentCourse", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
                     b.Property<int>("StudentId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
-
-                    b.HasIndex("CourseId");
+                    b.HasKey("CourseId", "StudentId");
 
                     b.HasIndex("StudentId");
 

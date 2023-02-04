@@ -1,13 +1,15 @@
 ﻿using Day19EntityFramework.Data;
 using Day19EntityFramework.Models;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
+using System.Security.Claims;
 
 namespace Day19EntityFramework.Controllers
 {
     public class HomeController : Controller
     {
-        
         private readonly ApplicationDbContext _context;
         private readonly ILogger<HomeController> _logger;
 
@@ -17,8 +19,19 @@ namespace Day19EntityFramework.Controllers
             _context = context;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
+
+            var claimsList = new List<Claim> {
+                new Claim(ClaimTypes.Name, "ABC"),
+                new Claim(ClaimTypes.Role, "Admin")
+            };
+
+            var claimIdentity = new ClaimsIdentity(claimsList, "login");
+            var claimPrinciple = new ClaimsPrincipal(claimIdentity);
+            await HttpContext.SignInAsync(claimPrinciple);
+
+
             var employee = new Employee { 
                 Name = "Employee1",
                 Address = "House # 11",
@@ -74,6 +87,7 @@ namespace Day19EntityFramework.Controllers
             return View();
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Privacy()
         {
             return View();

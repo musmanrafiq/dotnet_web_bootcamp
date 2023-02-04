@@ -83,15 +83,11 @@ namespace Day19EntityFramework.Data
         public ICollection<StudentCourse> StudentCourses { get; set; }
     }
 
+    [PrimaryKey(nameof(CourseId), nameof(StudentId))]
     public class StudentCourse
     {
-        public int Id { get; set; }
-        //[Key]
-        //[Column(Order = 1), Key, ForeignKey("Course")]
         public int CourseId { get; set; }
         public Course Course { get; set; }
-        //[Key]
-        //[Column(Order = 2), Key, ForeignKey("Student")]
         public int StudentId { get; set; }        
         public Student Student { get; set; }
     }
