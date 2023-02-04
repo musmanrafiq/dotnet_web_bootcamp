@@ -1,19 +1,23 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Day19EntityFramework.Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
 
-        
-       public DbSet<Employee> Employees { get; set; }
+        }
 
+        public DbSet<Employee> Employees { get; set; }
         public DbSet<Student> Students { get; set; }
         public DbSet<Course> Courses { get; set; }
 

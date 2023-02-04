@@ -12,13 +12,16 @@ namespace Day19EntityFramework.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
+        public HomeController(
+            ILogger<HomeController> logger, 
+            ApplicationDbContext context)
         {
             _logger = logger;
             _context = context;
+
         }
 
+  
         public async Task<IActionResult> Index()
         {
 
@@ -66,9 +69,9 @@ namespace Day19EntityFramework.Controllers
             };
 
 
-            stuent1.StudentCourses.Add(new StudentCourse { Course = course1 });
-            stuent1.StudentCourses.Add(new StudentCourse { Course = Course2 });
-            stuent2.StudentCourses.Add(new StudentCourse { Course = Course2 });
+            //stuent1.StudentCourses.Add(new StudentCourse { Course = course1 });
+            //stuent1.StudentCourses.Add(new StudentCourse { Course = Course2 });
+            //stuent2.StudentCourses.Add(new StudentCourse { Course = Course2 });
 
             _context.Students.Add(stuent2);
             _context.Students.Add(stuent1);

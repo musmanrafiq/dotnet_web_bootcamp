@@ -1,5 +1,6 @@
 using Day19EntityFramework.Data;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Day19EntityFramework
@@ -21,11 +22,14 @@ namespace Day19EntityFramework
                     UseSqlServer(builder.Configuration.GetConnectionString("FirstConString"));
                 }));
 
+            builder.Services.AddIdentity<IdentityUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>();
+
             builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie((options) => {
                     options.LoginPath = "/Account/Login";
-            });
-
+                });
+            
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
